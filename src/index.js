@@ -7,7 +7,7 @@ import { StateProvider } from './contextapi/StateProvider';
 import { reducer, initialState } from './contextapi/reducer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <React.StrictMode>
     <StateProvider reducer={reducer} initialState={initialState}>
       <App />

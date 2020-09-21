@@ -3,6 +3,7 @@ import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import CategoriesComponent from './CategoriesComponent';
 import './MainComponent.css'
 import ProductList from './ProductList';
+import { createMemoryHistory } from 'history';
     
 export default class MainComponent extends Component {
 
@@ -10,6 +11,8 @@ export default class MainComponent extends Component {
 
 
     render() { 
+
+        const history = createMemoryHistory();
         
         const ProductListId = ({match}) => {
             return(
@@ -21,7 +24,7 @@ export default class MainComponent extends Component {
         return (
             <div className="main">
                 <CategoriesComponent />
-                <Switch>
+                <Switch history={history}>
                     <Route path="/category/:categoryId" component={ProductListId} />
                 </Switch>
                 
