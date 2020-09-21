@@ -4,6 +4,7 @@ import CategoriesComponent from './CategoriesComponent';
 import './MainComponent.css'
 import ProductList from './ProductList';
 import { createMemoryHistory } from 'history';
+import { BrowserRouter as Router } from "react-router-dom";
     
 export default class MainComponent extends Component {
 
@@ -27,8 +28,15 @@ export default class MainComponent extends Component {
                 <Switch history={history}>
                     <Route path="/category/:categoryId" component={ProductListId} />
                 </Switch>
+
+               {/* <Router>
+              <div>
+                <CategoriesComponent />
+                <Route path="/category/:categoryId" component={ProductListId} />
+                </div>
+            </Router> */}
                 
-            </div>
+             </div>
         )
     }
 }
