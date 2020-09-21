@@ -1,0 +1,16 @@
+.product__pagination{
+    display: flex;
+    vertical-align: middle;
+    padding: 20px;
+    margin-left: 50%;
+}
+
+.product__pagination > button {
+    padding: 20px;
+    outline-width: 0;
+    border: 0;
+    background-color: grey;
+    color: white;
+    margin: 10px;
+    border-radius: 20px;
+}

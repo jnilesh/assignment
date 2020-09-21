@@ -1,0 +1,40 @@
+.product {
+    display: flex;
+    padding: 5px;
+    background-color: rgb(247, 239, 239);
+    margin-bottom: 10px;
+    align-items: center;
+    overflow: auto;
+
+}
+
+.product__image {
+    width: 150px;
+}
+.product__image > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+}
+
+.product__info {
+    margin-left: 20px;
+}
+
+.variant__price{
+    display: flex;
+}
+
+.info__variants {
+    display: flex;
+}
+
+.variant{
+    margin-right: 50px;
+}
+
+.mrp {
+    text-decoration: line-through;
+    margin-right: 15px;
+    color: gray;
+}

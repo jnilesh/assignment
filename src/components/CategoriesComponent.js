@@ -24,7 +24,7 @@ function CategoriesComponent() {
     return (
         <div className="main__category">
             { categories && categories.map((cat)=> (
-                <Cat cat={cat} />
+                <Cat key={cat.id} cat={cat} />
             ))}
         </div>
     )

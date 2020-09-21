@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import './Categories.css'
+import './ProductList.css'
 import Product from './Product'
 
 function ProductList({id}) {
@@ -47,10 +47,11 @@ function ProductList({id}) {
     return (
         <div>
             { products && products.map((product)=>(
-                <Product product={product} />
+                <Product key={product.product_id} product={product} />
             ))}
 
             <div className="product__pagination">
+                
                 <button onClick={previousPage} >Previos</button>
                 <button onClick={nextPage} >Next</button>
                 
